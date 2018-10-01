@@ -1,7 +1,7 @@
 ## Usage
 
 ```sh
-$ bash deploy.sh <app_name>
+$ bash fast-deploy.sh <app_name>
 $ cd <app_name>
 $ python3 -V
 Python 3.5.2
