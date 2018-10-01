@@ -62,7 +62,7 @@ app = Flask(__name__)
 
 @main_blueprint.route('/', methods= ['GET', 'POST'])
 def main():
-    return render_template('layout.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug= True)
@@ -92,7 +92,22 @@ cat <<EOT >> $1/app/templates/layout.html
     </head>
 
 <body>
-    <h1> Hola mundo! </h1>
+{% block content %}
+
+{% endblock %}
 </body>
+{% block footer %}
+
+{% endblock %}
 </html>
+EOT
+
+cat <<EOT >> $1/app/templates/index.html
+{% extends "layout.html" %}
+{% block title %}$1{% endblock %}
+{% block content %}
+    <h1> Hola Mundo! </h1>
+{% endblock %}
+{% block footer %}
+{% endblock %}
 EOT
