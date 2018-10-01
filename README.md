@@ -12,7 +12,8 @@ $ python3 run.py
  * Debugger PIN: 108-677-645
 ```
 
-```
+```sh
+$ tree
 .
 ├── app
 │   ├── __init__.py
