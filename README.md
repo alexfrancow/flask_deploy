@@ -11,3 +11,23 @@ $ python3 run.py
  * Debugger is active!
  * Debugger PIN: 108-677-645
 ```
+
+```
+.
+├── app
+│   ├── __init__.py
+│   ├── mods
+│   │   └── mod_main
+│   │       └── views.py
+│   ├── static
+│   │   ├── css
+│   │   │   └── styles.css
+│   │   └── js
+│   └── templates
+│       ├── index.html
+│       └── layout.html
+├── requirements.txt
+└── run.py
+
+7 directories, 7 files
+```
