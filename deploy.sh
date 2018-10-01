@@ -74,7 +74,7 @@ cat <<EOT >> $1/app/templates/layout.html
 <html>
     <head>
     {% block head %}
-        <title>{% block title %}{% endblock %} - A-Detector</title>
+        <title>{% block title %}{% endblock %} $1 </title>
         <meta charset="utf-8"/>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
         
