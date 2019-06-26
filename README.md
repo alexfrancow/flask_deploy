@@ -32,3 +32,5 @@ $ tree
 
 7 directories, 7 files
 ```
+
+This script only works on Python3, because in Python2 you need create a __init__.py to make Python treat the directories as containing packages. If you'll use this on Python2 you must create __init__.py in mods/ and in mods/mod_main/ folders, the __init__.py can just an empty file. For more info: https://docs.python.org/2/tutorial/modules.html#packages
